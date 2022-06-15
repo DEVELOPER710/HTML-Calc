@@ -1,5 +1,5 @@
 # HTML-Calc
 
-A basic helpful Calculator from HTML  - by DEVELOPER710
+An online HTML-based basic helpful Calculator  - by DEVELOPER710
 
 (Useful in Daily Life)
