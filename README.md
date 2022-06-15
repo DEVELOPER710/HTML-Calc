@@ -14,10 +14,8 @@
 
 2)  A Whole Number to Binary Converter ! `https://`
 
-## 2 HTML-BASED GAMESS which you can play when you are bored !
+## 1 HTML-BASED GAMESS which you can play when you are bored !
 
 1)  Fly in the AIR Game (aka. AIR Game) `https://`
-
-2)  Snake Game `https://`
 
 ###   by DEVELOPER710
