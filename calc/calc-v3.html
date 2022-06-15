@@ -1,0 +1,133 @@
+<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'></head><body style='background: white; margin: 0;'><table height='100%' width='100%' cellspacing='0' cellpadding='0'><tbody><tr><td align='center' valign='middle'>
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Calculator v3 by DEVELOPER710</title>
+</head>
+<style>
+html{background-color: lightblue}
+
+table{background-color: orange}
+
+input{background-color:white}
+</style>
+<body>
+<h1> Calculator v3 </h1>
+<h3>by DEVELOPER710</h3>
+<form name="Calc">
+<table border=1>
+<tr>
+<td>
+&nbsp <input type="text" name="Numbers" size=30 />&nbsp
+</td>
+</tr>
+<tr>
+<td>
+&nbsp <input type="button" value="    1    " onClick="document.Calc.Numbers.value += '1'"/>
+<input type="button" value="     2     " onClick="document.Calc.Numbers.value += '2'"/>
+<input type="button" value="     3     " onClick="document.Calc.Numbers.value += '3'"/>
+<input type="button" value="     +     " onClick="document.Calc.Numbers.value += '+'"/>&nbsp
+<br />
+&nbsp <input type="button" value="    4    " onClick="document.Calc.Numbers.value += '4'"/>
+<input type="button" value="     5     " onClick="document.Calc.Numbers.value += '5'"/>
+<input type="button" value="     6     " onClick="document.Calc.Numbers.value += '6'"/>
+<input type="button" value="     -      " onClick="document.Calc.Numbers.value += '-'"/>&nbsp
+<br />
+&nbsp <input type="button" value="    7    " onClick="document.Calc.Numbers.value += '7'"/>
+<input type="button" value="     8     " onClick="document.Calc.Numbers.value += '8'"/>
+<input type="button" value="     9     " onClick="document.Calc.Numbers.value += '9'"/>
+<input type="button" value="     x     " onClick="document.Calc.Numbers.value += '*'"/>&nbsp
+<br />
+&nbsp <input type="button" value="  (   " onClick="document.Calc.Numbers.value += '('"/>
+<input type="button" value="   )  " onClick="document.Calc.Numbers.value += ')'"/>
+<input type="button" value="   ½  " onClick="document.Calc.Numbers.value += '1/2'"/>
+<input type="button" value="   0   " onClick="document.Calc.Numbers.value += '0'"/>
+<input type="button" value="     ÷     " onClick="document.Calc.Numbers.value += '/'"/>&nbsp
+<br />
+&nbsp <input type="button" value="Clear" onClick="document.Calc.Numbers.value = ' '"/>
+<input type="button" value="Exponent" onClick="document.Calc.Numbers.value += ' ** '"/>
+<input type="button" value="SqRt" onClick="document.Calc.Numbers.value += ' ** 0.5'"/>
+<input type="button" value=" π " onClick="document.Calc.Numbers.value += ' * 22/7'"/>
+<input type="button" value=" = " onClick="document.Calc.Numbers.value = eval(Calc.Numbers.value)"/>&nbsp
+<br />
+</td>
+</tr>
+</table>
+<br><br>
+<h2> Guide </h2>
+<p>
+Exponentiation → 4**2 = 16 ( Square of 4 )<br><br>
+Square Root → Enter the number and then SqRt .<br>
+&nbsp &nbsp &nbsp &nbsp Eg : 16**0.5 = 4 <br><br>
+Pi (π = 22/7) Calculation → Enter the number and then " π " Button <br><br>
+Half of a Number → 16 * ½  = 8<br>
+</p><br>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<h2> Area of Circle Calculator </h2>
+<label> Enter the diameter of circle ( in cm ) : </label><br>
+<input type="number" id="diameter"><label> cm </label><br>
+<button type="button" onclick="CircleAreaCal()">  Calculate  </button>
+<input type="number" id="outputdia"><label> cm </label>
+<script>
+   function CircleAreaCal()
+   {
+    var diameter = document.getElementById('diameter').value;
+    var circlearea = (diameter * 22/7)
+    //alert(circlearea);
+    document.getElementById('outputdia').value = circlearea;
+}
+  </script><br><br>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<h2> Percentage Calculators </h2>
+<style>
+   div.class1{
+   background-color: lightblue
+   padding: 40px;
+}
+</style>
+ </head>
+ <body>
+   <div class='class1'>
+  <h3> Fraction to Percentage Calculator </h3>
+  <br><br>
+  <label> Numerator </label>
+  <input type="number" id="numerator"><br>
+  <label>  Denominator  </label>
+  <input type="number" id="denominator"><br>
+  <button type="button" onclick="PercentCalc()">  Calculate  </button>
+  <input type="number" id="output2"> <label> % </label>
+  </div>
+  <script>
+   function PercentCalc()
+   {
+    var numerator = document.getElementById('numerator').value;
+    var denominator = document.getElementById('denominator').value;
+    var percent = (numerator / denominator) * 100
+    //alert(percent);
+    document.getElementById('output2').value = percent;
+}
+  </script>
+  <br><!--------------------------------------------------------------------------------------------------------------------------->
+  <div class='class1'><br>
+  <h3> Percentage of Number </h3>
+  <br>
+  <label> What Is </label>
+  <input type="number" id="percentNo">
+  <label>  % <br> &nbsp of &nbsp &nbsp </label>
+  <input type="number" id="amount"><br>
+  <button type="button" onclick="PercentCal()">  Calculate  </button>
+  <input type="number" id="output">
+  </div>
+  <script>
+   function PercentCal()
+   {
+    var percentNo=document.getElementById('percentNo').value;
+    var amount = document.getElementById('amount').value;
+    var percentage = (percentNo * amount) /100
+    //alert(percentage);
+    document.getElementById('output').value = percentage;
+}
+  </script><br><br>
+</body>
+</html></td></tr></tbody></table></body></html>

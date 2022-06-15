@@ -1,0 +1,72 @@
+
+			<!DOCTYPE html>
+<html>
+<h1> Whole Number to Binary </h1>
+<h4> Type the whole number and then press enter . </h4>
+<div class="container">
+  <p><input type="number" id="number"> = <span id="binary">0</span> in binary.</p>
+</div>
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #eee;
+  background: #222;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 3em;
+  font-size: 2em;
+  color: #377;
+  background: inherit;
+  border: none;
+  border-bottom: 5px solid #377;
+} input:hover {
+  border: none;
+  border-bottom: 5px solid #377;
+}
+
+#binary {
+  font-family: monospace;
+  font-size: 2em;
+  color: #793;
+}
+</style>
+
+<script>
+var decimalInput = document.querySelector("#number"); 
+var display = document.querySelector("#binary");
+
+//Convert input to binary
+function makeBinary(n) {
+  let output = '';
+  if (n != 0) {
+    let dividend = n;
+    while (dividend != 0) {
+      output = (dividend % 2) + output;
+      dividend = Math.floor(dividend/2);
+    }
+  } else { output = "0";}
+  return output;
+}
+
+//Update display
+function updateDisplay () {
+  display.textContent = makeBinary(Math.abs(decimalInput.value));
+}
+
+
+decimalInput.addEventListener("change", updateDisplay);
+decimalInput.addEventListener("click", updateDisplay);
+
+
+</script>
+<h5> Thank you to install the App and be sure to share it and let everyone know about it ! </h5>
+
+</html>
